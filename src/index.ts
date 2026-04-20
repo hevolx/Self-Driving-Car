@@ -44,10 +44,8 @@ class Car implements AutonomousCar {
   steeringControl: Steering | undefined;
 
   constructor(props: AutonomousCarProps) {
-    if (props.isRunning !== undefined) {
-      this.isRunning = props.isRunning;
-      this.steeringControl = props.steeringControl;
-    }
+    this.steeringControl = props.steeringControl;
+    this.isRunning = props.isRunning ?? false;
   }
 
   respond(events: Events) {
