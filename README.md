@@ -33,7 +33,7 @@ autonomousCar.respond(getObstacleEvents());
 
 ```bash
 git clone <repo-url>
-cd SelfDrivingCar
+cd Self-Driving-Car
 npm install
 ```
 
